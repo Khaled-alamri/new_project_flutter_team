@@ -20,8 +20,8 @@ class Login extends StatelessWidget {
             decoration: BoxDecoration(
     borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight: Radius.circular(20)),
      color: Colors.white,
-  ),
-          )
+  ),child: Text("kdkkk"),
+          ),
         ],
       ),
     );
