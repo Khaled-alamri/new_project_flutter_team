@@ -13,7 +13,9 @@ class Login_Imag extends StatelessWidget {
             width: Get.width/4,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("Images/doctor.png"), fit:BoxFit.fill,),
+                  image: AssetImage("Images/doctor.png"), 
+                  //fit:BoxFit.fill,
+                  ),
             ),
           );
   }
