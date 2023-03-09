@@ -5,15 +5,16 @@ import '../AppColors.dart';
 class BlueButton extends StatelessWidget {
   final VoidCallback function;
   final String text;
+  final double topMargin;
 
-  const BlueButton(this.text, this.function);
+  const BlueButton(this.text, this.topMargin, this.function);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       height: 42,
-      margin: EdgeInsets.symmetric(vertical: 24),
+      margin: EdgeInsets.only(bottom: 10, top: topMargin),
       child: ElevatedButton(
         onPressed: function,
         style: ElevatedButton.styleFrom(

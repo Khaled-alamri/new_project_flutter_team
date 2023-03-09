@@ -15,6 +15,7 @@ class InputField extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8.0),
       child: TextField(
         decoration: InputDecoration(
+          contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           labelText: label,
           filled: true,
           fillColor: Color(0xffF2F4F7),
