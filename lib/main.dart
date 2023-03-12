@@ -10,8 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Login(),
+    return MaterialApp(
+      title: "HEACRE",
+      home: Directionality(
+        // change the direction from right to left
+        textDirection: TextDirection.rtl,
+        child: Login(),
+      ),
     );
   }
 }
