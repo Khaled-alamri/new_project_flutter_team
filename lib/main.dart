@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/View/Login.dart';
+import 'package:flutter_project/View/Registration_And_What_Followes/Gender.dart';
+import 'package:get/get.dart';
 
 import 'View/Signup.dart';
 
@@ -12,13 +14,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "HEACRE",
-      home: Directionality(
-        // change the direction from right to left
-        textDirection: TextDirection.rtl,
-        child: Signup(),
-      ),
+
+    return const GetMaterialApp(
+      home: Gender(),
+
     );
   }
 }

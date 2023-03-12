@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_project/View/Component/Login_imag.dart';
+import 'package:flutter_project/View/Component/Registration_And_What_Followes_C/Back_Button.dart';
+import 'package:flutter_project/View/Registration_And_What_Followes/Gender.dart';
+
+
 import 'package:get/get.dart';
 
 import 'Component/Login_imag.dart';
@@ -34,6 +41,9 @@ class Login extends StatelessWidget {
               color: Colors.white,
             ),
           ),
+          Back_Button(onPressed: () {
+            Get.to(Gender());
+          },)
         ],
       ),
     );
