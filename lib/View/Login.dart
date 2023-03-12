@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_project/View/Component/Login_imag.dart';
+import 'package:flutter_project/View/Component/Registration_And_What_Followes_C/Back_Button.dart';
+import 'package:flutter_project/View/Registration_And_What_Followes/Gender.dart';
 import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
@@ -22,6 +24,9 @@ class Login extends StatelessWidget {
      color: Colors.white,
   ),child: Text("kdkkk"),
           ),
+          Back_Button(onPressed: () {
+            Get.to(Gender());
+          },)
         ],
       ),
     );
