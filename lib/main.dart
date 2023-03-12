@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/View/Login.dart';
 
+import 'View/Signup.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       home: Directionality(
         // change the direction from right to left
         textDirection: TextDirection.rtl,
-        child: Login(),
+        child: Signup(),
       ),
     );
   }
